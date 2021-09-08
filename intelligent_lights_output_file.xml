@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2020年01月09日 星期四 15时25分00秒 by Eclipse SUMO GUI Version v1_4_0+0055-11695c0903
+<!-- generated on 2021-09-05 17:00:21 by Eclipse SUMO GUI Version 1.10.0
 <configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
 
     <input>
-        <net-file value="cfg/twoWay6lanes.net.xml"/>
-        <route-files value="cfg/twoWay6lanes.rou.xml"/>
+        <net-file value="intelligent_traffic.net.xml"/>
+        <route-files value="intelligent_traffic.rou.xml"/>
     </input>
 
     <output>
-        <tripinfo-output value="my_output_file.xml"/>
+        <tripinfo-output value="intelligent_lights_output_file.xml"/>
     </output>
 
     <time>
+        <begin value="0"/>
+        <end value="15000"/>
         <step-length value="0.01"/>
     </time>
 
@@ -22,11 +24,11 @@
     </report>
 
     <traci_server>
-        <remote-port value="50567"/>
+        <remote-port value="57419"/>
     </traci_server>
 
     <gui_only>
-        <gui-settings-file value="cfg/twoWay6lanes.gui.xml"/>
+        <gui-settings-file value="intelligent_traffic.gui.xml"/>
         <start value="true"/>
         <tracker-interval value="0.01"/>
     </gui_only>
